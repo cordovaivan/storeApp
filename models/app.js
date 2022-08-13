@@ -2,6 +2,7 @@ const express = require('express');
 const exphbs = require('express-handlebars');
 const fileUpload = require('express-fileupload');
 const mysql = require('mysql');
+const sequelize = require('../config/connection');
 
 const app = express();
 const port = process.env.PORT || 5000;
@@ -62,4 +63,6 @@ app.post('', (req, res) => {
     });
 });
 
-app.listen(port, () => console.log(`Listening on port ${port}`));
+// app.listen(port, () => console.log(`Listening on port ${port}`));
+
+module.exports = app;
