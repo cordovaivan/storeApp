@@ -15,7 +15,7 @@ const app = express();
 const clothes = require('./clothesRoutes');
 const users = require('./userRoutes');
 
-app.use(clothes);
-app.use(users);
+// app.use(clothes);
+// app.use(users);
 
 module.exports = app;
