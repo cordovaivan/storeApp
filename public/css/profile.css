@@ -12,3 +12,9 @@ img {
     display: grid;
     place-items: center;
 }
+
+.btn {
+    border: none;
+    color:cadetblue;
+    text-align: center;
+}
