@@ -1,21 +1,9 @@
-// const router = require('express').Router();
-// const clothesRoutes = require('./clothesRoutes');
-// const userRoutes = require('./userRoutes');
+const router = require('express').Router();
 
-// router.use('./users', userRoutes);
-// router.use('/clothes', clothesRoutes);
+const apiRoutes = require('./api');
+const homeRoutes = require('./homeRoutes');
 
-// module.exports = router;
+router.use('/', homeRoutes);
+router.use('/api', apiRoutes);
 
-
-
-const express = require('express');
-const app = express();
-
-const clothes = require('./clothesRoutes');
-const users = require('./userRoutes');
-
-// app.use(clothes);
-// app.use(users);
-
-module.exports = app;
+module.exports = router;
