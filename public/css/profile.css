@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    background-color: bisque;
+    font-family:sans-serif;
+}
+
+img {
+    width: 50%;;
+}
+
+.wrapper {
+    display: grid;
+    place-items: center;
+}
+
+.btn {
+    border: none;
+    color:cadetblue;
+    text-align: center;
+}
