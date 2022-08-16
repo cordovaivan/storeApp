@@ -1,22 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
-</head>
 <body>
    <ul class="nav justify-content-center">
   <li class="nav-item">
     <a class="nav-link active" aria-current="page" href="#">Home</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#"><span><i class="fa-solid fa-user"></i></span>Login</a>
+    <a class="nav-link" href="#"><i class="fa-solid fa-user"></i>Login</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#"><span> <i class="fa-solid fa-cart-minus"></i></span>Cart</a>
+    <a class="nav-link" href="#"><span><i class="fa-solid fa-cart-minus"></i></span>Cart</a>
   </li>
 <div class="input-group rounded">
   <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
@@ -25,6 +16,16 @@
   </span>
 </div>
 </ul>
+<form action="/" method="POST" encType="multipart/form-data">
+<h3>Upload Photos</h3>
+<input type="file" name="sampleFile" accepts="image/*"/>
+<input type="submit" class="btn btn-primary">
+
+</form>
+
+<div class="card">
+  <img class="card_image" src="/img/default.png" alt="User Images">
+</div>
 <main>
     <div class="container">
         <div class="rows">
@@ -66,4 +67,4 @@
     </div>
 </main>
 </body>
-</html>
+
