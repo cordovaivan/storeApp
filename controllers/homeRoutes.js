@@ -80,7 +80,7 @@ router.get('/login', (req, res) => {
 });
 
 router.get('/cart', async (req, res) => {
-  res.render('all');
+  res.render('cart');
 });
 
 module.exports = router;
