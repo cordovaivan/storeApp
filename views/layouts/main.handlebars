@@ -13,9 +13,20 @@
   <div class="flex-column justify-space-around">
       <main class="container container-fluid mt-5">
       <!-- The following line is a place holder for where the main content will be rendered. -->
+
+       {{#if logged_in}}
+        <a href="/profile">profile</a> |
+        <button class="no-button" id="logout">logout</button>
+        {{/if}}
+
      {{{ body }}}
       </main>
   </div>
+
+    {{#if logged_in}}
+  <script src="/js/logout.js"></script>
+  {{/if}}
+
 
     
 </main>
