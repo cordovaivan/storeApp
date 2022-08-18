@@ -79,4 +79,8 @@ router.get('/login', (req, res) => {
   res.render('login');
 });
 
+router.get('/cart', async (req, res) => {
+  res.render('cart');
+});
+
 module.exports = router;
