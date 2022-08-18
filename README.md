@@ -17,8 +17,6 @@ a comment the user must log in.
 "mysql2": "^2.2.5",
 "sequelize": "^6.3.5"
 
-https://drive.google.com/file/d/1zjI6XHzS1LyMuBbQIUCV0SYl7-GsPFeY/view
-
 
 ## Usage
 
